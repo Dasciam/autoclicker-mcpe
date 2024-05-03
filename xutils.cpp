@@ -56,6 +56,7 @@ Window xutils::GetActiveWindow(Display *display) {
 Display *xutils::GetDefaultDisplay() {
   return XOpenDisplay(nullptr);
 }
+
 void xutils::CloseDisplaySession(Display *display) {
   XCloseDisplay(display);
 }
